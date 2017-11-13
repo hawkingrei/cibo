@@ -1,0 +1,7 @@
+[[service]]
+serviceName="wwz"
+servicePort=1020
+
+[[service]]
+serviceName="wwaz"
+servicePort=1022
