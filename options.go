@@ -34,7 +34,7 @@ func NewOptions() *Options {
 }
 
 func (o *Options) ReadNginxFile(path string) (results []string) {
-	file, err := os.Open("/Users/loveknut/duitang/nginx_web/includes/hybrid_basic.conf")
+	file, err := os.Open(path)
 	if err != nil {
 		log.Fatal(err)
 	}
