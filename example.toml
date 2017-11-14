@@ -1,7 +1,7 @@
 [[service]]
-serviceName="wwz"
-servicePort=1020
+serviceName="vienna"
+servicePort=8300
 
 [[service]]
-serviceName="wwaz"
-servicePort=1022
+serviceName="munich"
+servicePort=8080
