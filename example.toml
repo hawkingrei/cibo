@@ -5,3 +5,11 @@ servicePort=8300
 [[service]]
 serviceName="munich"
 servicePort=8080
+
+[[service]]
+serviceName="static"
+servicePort=80
+
+[[service]]
+serviceName="buy"
+servicePort=8080
