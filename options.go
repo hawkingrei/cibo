@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 
@@ -34,6 +35,7 @@ func NewOptions() *Options {
 }
 
 func (o *Options) ReadNginxFile(path string) (results []string) {
+	fmt.Println(path)
 	file, err := os.Open(path)
 	if err != nil {
 		log.Fatal(err)

@@ -68,11 +68,12 @@ func main() {
 		log.Fatalf("ERROR: failed to load config file %s - %s", configFile, err.Error())
 		os.Exit(-1)
 	}
+
 	opts.Conf = flagSet.Lookup("input").Value.String()
 	opts.OutputFile = flagSet.Lookup("output").Value.String()
 	opts.TmpFile = flagSet.Lookup("outputtmp").Value.String()
 	takon := NewTakon()
-	takon.SetContent(opts.ReadNginxFile(opts.InputFile))
+	takon.SetContent(opts.ReadNginxFile(opts.Conf))
 	err = takon.Start()
 	if err != nil {
 		fmt.Println(err)
