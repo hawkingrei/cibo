@@ -68,7 +68,6 @@ func main() {
 		log.Fatalf("ERROR: failed to load config file %s - %s", configFile, err.Error())
 		os.Exit(-1)
 	}
-	fmt.Println(meta)
 	opts.Conf = flagSet.Lookup("input").Value.String()
 	opts.OutputFile = flagSet.Lookup("output").Value.String()
 	opts.TmpFile = flagSet.Lookup("outputtmp").Value.String()
